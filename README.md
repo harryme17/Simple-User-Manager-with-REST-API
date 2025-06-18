@@ -7,7 +7,8 @@ A simple web application to manage users (add, edit, delete) using a REST API. B
 This project was made basically and formerly to help revise and test REST API concepts.  
 It is intended as a learning tool for beginners or anyone wanting to practice CRUD operations with a simple frontend and a public API.
 
-![image](https://github.com/user-attachments/assets/54407853-0aca-4432-bc4f-f48892d7323c)
+![image](https://github.com/user-attachments/assets/aabef5c1-af0a-4b8a-9aff-0b7a59694f64)
+
 
 
 ## Features
