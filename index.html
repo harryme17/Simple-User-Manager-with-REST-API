@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>User Manager</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f1f4f9;
+    }
+    .card-wrapper {
+      max-width: 600px;
+      margin: auto;
+    }
+    .form-control:focus {
+      box-shadow: none;
+      border-color: #0d6efd;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
+    <div class="container">
+      <a class="navbar-brand" href="#">👤 User Manager</a>
+    </div>
+  </nav>
+
+  <div class="container py-4">
+    <div class="card shadow card-wrapper p-4">
+      <!-- Alerts -->
+      <div id="alertPlaceholder"></div>
+
+      <!-- Load Users -->
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h4 class="mb-0">User List</h4>
+        <button onclick="getUsers()" class="btn btn-primary">
+          <span id="loadSpinner" class="spinner-border spinner-border-sm d-none"></span>
+          📥 Load Users
+        </button>
+      </div>
+
+      <!-- User List -->
+      <ul id="userList" class="list-group mb-4"></ul>
+
+      <!-- Add New User -->
+      <div class="card p-3 bg-light">
+        <h5 class="mb-3">Add New User</h5>
+        <div class="row g-2">
+          <div class="col-md-6">
+            <input id="newName" class="form-control" placeholder="Name" />
+          </div>
+          <div class="col-md-6">
+            <input id="newEmail" class="form-control" placeholder="Email" />
+          </div>
+          <div class="col-12 d-grid mt-3">
+            <button onclick="addUser()" class="btn btn-success">
+              ➕ Add
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
