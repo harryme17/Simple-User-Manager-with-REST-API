@@ -1,4 +1,4 @@
-const API_URL = 'https://crudcrud.com/api/94537245e83b47d9ab172340c27aeed9/users'; // API endpoint for users
+const API_URL = ''; // API endpoint for users
 const userList = document.getElementById('userList'); // Reference to the user list element
 
 // GET - Load users
